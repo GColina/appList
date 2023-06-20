@@ -3,6 +3,8 @@ package com.example.firstappandroidmaster.imccalculator
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
@@ -16,6 +18,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private var isMaleSelected: Boolean = true
     private var isFemaleSelected: Boolean = false
     private var currentWeight: Int = 70
+    private var currentHeight: Int = 120
     private var currentAge: Int = 30
 
     private lateinit var viewMale: CardView
@@ -28,6 +31,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private lateinit var btnPlusAge: FloatingActionButton
     private lateinit var tvWeigh: TextView
     private lateinit var tvAge: TextView
+    private lateinit var btnCalculate: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +54,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
         btnSubtracAge = findViewById(R.id.btnSubtracAge)
         btnPlusAge = findViewById(R.id.btnPlusAge)
         tvAge = findViewById(R.id.tvAge)
+        btnCalculate = findViewById(R.id.btnCalculate)
 
     }
 
@@ -64,8 +69,8 @@ class ImcCalculatorActivity : AppCompatActivity() {
         }
         rsHeight.addOnChangeListener { _, value, _ ->
             val df = DecimalFormat("#.##")
-            val result = df.format(value)
-            tvHeight.text = "$result cm"
+            currentHeight = df.format(value).toInt()
+            tvHeight.text = "$currentHeight cm"
         }
         btnPlusWeight.setOnClickListener {
             currentWeight = currentWeight + 1
@@ -90,6 +95,16 @@ class ImcCalculatorActivity : AppCompatActivity() {
             //currentWeight -= 1
             setAge()
         }
+        btnCalculate.setOnClickListener {
+            calculateIMC()
+        }
+    }
+
+    private fun calculateIMC() {
+        val df = DecimalFormat("#.##")
+        val imc = currentWeight / (currentHeight.toDouble() / 100 * currentHeight.toDouble() / 100)
+        val result = df.format(imc).toDouble()
+        Log.i("aristidevs", "el imc es $result")
     }
 
     private fun setAge() {

@@ -208,7 +208,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity ="center"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -256,5 +256,13 @@
 
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/Calculate"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
