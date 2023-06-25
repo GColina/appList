@@ -12,6 +12,9 @@
         android:theme="@style/Theme.FirstAppAndroidMaster"
         tools:targetApi="31">
         <activity
+            android:name=".imccalculator.ResultIMCActivity"
+            android:exported="false" />
+        <activity
             android:name=".imccalculator.ImcCalculatorActivity"
             android:exported="false" />
         <activity
@@ -25,10 +28,10 @@
         </activity>
         <activity
             android:name=".FirstApp.ResultActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".FirstApp.FirstAppActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
