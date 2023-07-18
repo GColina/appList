@@ -12,7 +12,7 @@ class FirstAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_first_app)
+        setContentView(R.layout.activity_saludapp)
         val btnStart = findViewById<AppCompatButton>(R.id.btnStart)
         val etName = findViewById<AppCompatEditText>(R.id.etName)
 

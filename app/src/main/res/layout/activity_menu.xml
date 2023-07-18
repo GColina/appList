@@ -5,18 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    tools:context=".MenuActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
 
     <Button
         android:id="@+id/btnSaludApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SaludApp" />
+        android:text="@string/btnSaludApp"
+        android:textColor="@color/title_menu_app" />
+
     <Button
         android:id="@+id/btnIMCApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IMC APP" />
+        android:text="@string/btnIMCApp"
+        android:textColor="@color/title_menu_app" />
+
+    <Button
+        android:id="@+id/btnTODO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnTODO"
+        android:textColor="@color/title_menu_app" />
+
+    <Button
+        android:id="@+id/btnSuperHero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSuperHero"
+        android:textColor="@color/title_menu_app" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSettings"
+        android:textColor="@color/title_menu_app" />
+
 
 </LinearLayout>

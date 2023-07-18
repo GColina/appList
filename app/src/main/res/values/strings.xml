@@ -1,4 +1,7 @@
 <resources>
+
+
+    //IMC APP
     <string name="app_name">firstAppAndroidMaster</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
@@ -8,20 +11,50 @@
     <string name="Calculate">Calcular</string>
     <string name="result">Tu resultado</string>
     <string name="recalculate">Re-Calcular</string>
-
-
     <string name="error">Error</string>
     <string name="title_bajo_peso">Bajo peso</string>
     <string name="description_bajo_peso">Estás por debajo de lo óptimo para tu  peso y altura.</string>
-
     <string name="title_peso_normal">Normal</string>
     <string name="description_peso_normal">Estás en lo óptimo para tu  peso y altura.</string>
-
     <string name="title_sobrepeso">Sobrepeso</string>
     <string name="description_sobrepeso">Estás por encima de lo óptimo para tu  peso y altura.</string>
-
     <string name="title_obesidad">Obesidad</string>
     <string name="description_obesidad">Estás MUY por encima de lo óptimo para tu  peso y altura.</string>
+
+    //TODO APP
+    <string name="todo_title"> bienvenido A todo app</string>
+    <string name="todo_categories"> categorías:</string>
+    <string name="todo_tasks"> tareas:</string>
+
+
+    <string name="todo_dialog_add_task"> Añade la tarea </string>
+    <string name="todo_dialog_category_business"> Negocios </string>
+    <string name="todo_dialog_category_personal"> Personal </string>
+    <string name="todo_dialog_category_other"> Otros </string>
+    <string name="todo_dialog_add_task_button"> Añade la tarea </string>
+
+
+    //SuperHeroList
+
+    <string name="super_hero_attributes_intelligence"> Intelligence</string>
+    <string name="super_hero_attributes_strength"> Strength</string>
+    <string name="super_hero_attributes_speed"> Speed</string>
+    <string name="super_hero_attributes_durability"> Durability</string>
+    <string name="super_hero_attributes_power"> Power</string>
+    <string name="super_hero_attributes_intellicombatgence"> Intellicombatgence</string>
+
+
+    //BTN_MENU
+    <string name="btnSaludApp">SaludApp</string>
+    <string name="btnIMCApp">IMC APP</string>
+    <string name="btnTODO">TODO APP</string>
+    <string name="btnSuperHero">SUPER HERO</string>
+    <string name="btnSettings">SETTINGS</string>
+
+
+    //Settings_Menu
+    <string name="tittle_settings_drackMode">Modo oscuro</string>
+    <string name="description_settings_drackMode">Activa el modo oscuro para un cambio visual</string>
 
 
 
